@@ -28,7 +28,7 @@ const Footer = () => {
       <hr />
       <div className="footer-bottom">
         <p className="footer-bottom-left">
-            copyright &copy; 2023 masaa. All rights reserved
+            copyright &copy; 2023 Rodney. All rights reserved
         </p>
         <div className="footer-bottom-right">
             <p>Term of Services</p>

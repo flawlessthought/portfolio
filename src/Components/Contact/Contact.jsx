@@ -59,7 +59,7 @@ const Contact = () => {
           <div className="contact-details">
             <div className="contact-detail">
               <img src={mail_icon} alt="Email" />
-              <p>masaa@gmail.com</p>
+              <p>rodnimtinda16@gmail.com</p>
             </div>
             <div className="contact-detail">
               <img src={location_icon} alt="Location" />
@@ -67,7 +67,7 @@ const Contact = () => {
             </div>
             <div className="contact-detail">
               <img src={call_icon} alt="Phone" />
-              <p>+254 712 345 678</p>
+              <p>+254 769 681 015</p>
             </div>
           </div>
         </div>
