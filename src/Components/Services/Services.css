@@ -1,4 +1,4 @@
-.services{
+.services {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -6,27 +6,25 @@
     gap: 80px;
     margin: 80px 170px;
 }
-.services-title{
+
+.services-title {
     position: relative;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center; */
 }
-.services-title h1{
+
+.services-title h1 {
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 600;
 }
-.services-title img{
+
+.services-title img {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
-.services-format{
+
+.services-format {
     display: flex;
     padding: 60px;
     justify-content: center;
@@ -37,40 +35,115 @@
     transition: 0.4s;
     cursor: pointer;
 }
-.services-container{
+
+.services-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 80px;
     gap: 40px;
 }
-.services-format h3{
+
+.services-format h3 {
     font-size: 30px;
     font-weight: 600;
 }
-.services-format h2{
+
+.services-format h2 {
     font-size: 40px;
     font-weight: 800;
     background: linear-gradient(267deg, #FFC107 49.36%, #b923e1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
-.services-format p{
+
+.services-format p {
     font-size: 24px;
     line-height: 40px;
     max-width: 300px;
     font-weight: 400;
     color: #d4d4d4;
 }
-.services-format:hover{
+
+.services-format:hover {
     transform: scale(1.05);
     background-image: linear-gradient(45deg, #3f0028 0%, #582300);
 }
-.read-more{
+
+.read-more {
     display: flex;
     align-items: center;
-  margin-top: 20px;
+    margin-top: 20px;
     gap: 20px;
     cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .services {
+        margin: 40px 20px; /* Reduce margins */
+        gap: 40px;
+    }
+
+    .services-title h1 {
+        font-size: 50px; /* Scale down the title */
+    }
+
+    .services-container {
+        grid-template-columns: 1fr; /* Make it a single-column layout */
+        gap: 20px; /* Reduce the gap between items */
+    }
+
+    .services-format {
+        padding: 40px; /* Reduce padding on service cards */
+    }
+
+    .services-format h2 {
+        font-size: 30px; /* Reduce heading size */
+    }
+
+    .services-format h3 {
+        font-size: 24px; /* Reduce subheading size */
+    }
+
+    .services-format p {
+        font-size: 18px; /* Scale down the paragraph text */
+        line-height: 30px;
+        max-width: 100%; /* Allow text to use full width */
+    }
+
+    .read-more {
+        font-size: 18px; /* Scale down the 'Read More' link */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-title h1 {
+        font-size: 40px;
+    }
+
+    .services-container {
+        gap: 10px;
+    }
+
+    .services-format {
+        padding: 30px;
+    }
+
+    .services-format h2 {
+        font-size: 28px;
+    }
+
+    .services-format h3 {
+        font-size: 22px;
+    }
+
+    .services-format p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .read-more {
+        font-size: 16px;
+    }
 }

@@ -25,6 +25,7 @@ max-width: 400px;
 .footer-email-input {
     display: flex;
     align-items: center;
+    margin-top: 10px;
     padding: 20px 30px;
     border-radius: 50px;
     background: #323238;
@@ -34,7 +35,7 @@ max-width: 400px;
   .footer-email-input input {
     flex: 1;
     outline: none;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     border: none;
     border-radius: 25px;
     font-size: 16px;
@@ -71,5 +72,23 @@ max-width: 400px;
     display: flex;  
     gap: 50px;
     margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .footer {
+    margin: 20px;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-topright {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-bottom{
+    flex-direction: row;
+    text-align: start;
+    flex-wrap: wrap;
+    padding: 3px;
+  }
 }
 
